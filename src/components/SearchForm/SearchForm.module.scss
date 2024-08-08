@@ -1,0 +1,27 @@
+.search-form {
+  padding: 10px 0 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background: transparent;
+  border: 1px solid #171212;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+
+  &:hover {
+    background: #171212;
+    color: #ffffff;
+
+    > svg {
+      fill: #ffffff;
+      stroke: #ffffff;
+    }
+  }
+
+  &_large {
+    padding: 10px;
+  }
+}

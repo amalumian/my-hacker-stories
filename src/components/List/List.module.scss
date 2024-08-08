@@ -1,0 +1,67 @@
+.list {
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+
+  > span {
+    padding: 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    > a {
+      color: inherit;
+    }
+
+    > .button_sort {
+      border: none;
+      padding: 0;
+      background: transparent;
+      font-size: inherit;
+      cursor: pointer;
+    }
+  }
+  .sort {
+    font-size: inherit;
+  }
+}
+
+.button {
+  background: transparent;
+  border: 1px solid #171212;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+
+  &_active {
+    font-weight: bold;
+    &::after {
+      content: ' \2193';
+    }
+
+    &_dec {
+      &::after {
+        content: ' \2191';
+      }
+    }
+  }
+
+  &:hover {
+    background: #171212;
+    color: #ffffff;
+
+    > svg {
+      fill: #ffffff;
+      stroke: #ffffff;
+    }
+  }
+
+  &_small {
+    padding: 5px;
+  }
+}
